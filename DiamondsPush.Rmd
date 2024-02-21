@@ -1,0 +1,18 @@
+---
+title: "DiamondsPush"
+author: "Mylo Sherma"
+date: "2024-02-21"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(dplyr)
+head(diamonds)
+
+diamonds %>%
+  select("price", "x", "y", "z") %>%
+  filter(price>17000)
+diamonds
+```
+
